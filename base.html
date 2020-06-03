@@ -1,0 +1,59 @@
+<!-- PLEASE SCROLL DOWN BELOW AFTER PRESSING BUTTONS TO SEE THE CHANGES-->
+<html>
+    <head>
+        <title>Catering Services Ltd.</title>
+        <h1> YUMMY CATERING SERVICES PVT LTD.</h1>
+        <link rel="stylesheet" type="text/css" href="Finalcss.css">
+        <script src="finaljava.js"></script>
+    </head>
+    <body>
+        <img src="momos.jpg" alt="momos" id="mophoto">
+        <img src="pizza.jpg" alt="pizza" id="piphoto">
+        <div class="content">
+        <form>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="first" id="name" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="number" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>Email Id:</td>
+                    <td><input type="email" name="emailid"></td>
+                </tr>
+                <tr>
+                    <td>Delivery Address:</td>
+                    <td><input type="text" name="address" required></td>
+                </tr>
+                <tr>
+                    <td>Select Items To Order:</td>
+                </tr>
+                <tr>
+                    <td>Momos: (Per Piece)</td><!--Customer has to order one item atleast of either momos or Pizza-->
+                    <td><input type="number" id="momos"></td>
+                    <td><input type="radio" name="mveg" value="veg">Vegetarian(Rs. 10)</td><!--Non Veg Option not working-->
+                    <td><input type="radio" name="mveg" value="nonveg">Non-Vegetarian(Rs. 12)</td>
+                </tr>
+                <tr>
+                    <td>Pizza: (Per Pizza)</td><!--Customer has to order one item atleast of either momos or Pizza-->
+                    <td><input type="number" id="pizza"></td>
+                    <td><input type="radio" name="pveg" value="veg">Vegetarian(Rs. 100)</td><!--Non Veg option not working -->
+                    <td><input type="radio" name="pveg" value="nonveg">Non-Vegetarian(Rs. 120)</td>
+                </tr>
+            </table>  
+        </form>
+        <div id="test">
+            <button id="my_button" onclick="nameverify()">PLACE ORDER</button><!--This button will verify the name-->
+            <button id="my1_button" onclick="calculate()">BILL DETAILS</button><!--This will verify the prper ordering quantity-->
+        </div> 
+        </div>
+        
+        
+        <p id="outname" style="text-align: center;"></p>
+        <p id="output" style="text-align: center;"></p>
+        <p id="date" style= "text-align: centre;"></p>
+    </body>
+</html>
